@@ -5,8 +5,8 @@
     font-family: roboto;
 }
 
-
 .buttons {
+    /* border: 1px dashed red; */
     margin-top: 10px;
     width: 430px;
     display: flex;
@@ -111,8 +111,17 @@
 @media screen and (max-width: 820px) {
     .picture-box {
         min-height: auto;
+    }   
+}
+
+@media screen and (max-width: 450px) {
+    .buttons {
+        width: 90vw;
+        align-items: flex-start;
+        flex-direction: column;
     }
 
-    
-    
+    button {
+        margin-bottom: 10px;
+    }
 }
