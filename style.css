@@ -187,7 +187,7 @@ header img {
 
 .card:hover {
     background: white;
-    box-shadow: 0 50px 100px rgb(245, 241, 241);
+    box-shadow: 0 0 150px rgb(245, 241, 241);
 }
 
 .card-content {
@@ -201,6 +201,23 @@ header img {
     .box {
         align-items: center;
         min-height: auto;
+    }
+
+    .buttons {
+        width: 90vw;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    button {
+        margin-bottom: 10px;
+    }
+
+    .button-fill {
+        width: 50vw;
+    }
+    .button-nofill {
+        width: 50vw;
     }
 }
 
@@ -243,5 +260,7 @@ header img {
 }
 
 @media screen and (max-width: 450px) {
-    
+    [data-aos].animated {
+        visibility: none;
+      }
 }

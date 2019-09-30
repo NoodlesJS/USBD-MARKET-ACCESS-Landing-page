@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
     <title>USBD MARKET ACCESS</title>
 </head>
 <body>
     <header>
         <img src="./img/logo.png" alt="logo of company">
-        <p style="font-size: 25px; font-weight: 900;">USBD MARKET ACCESS</p>
+        <p style="font-size: 25px; font-weight: 900; color: #2B6539">USBD MARKET ACCESS</p>
     </header>
     
     <div class="container-reverse">
         <div class="box">
-            <p class="title">BUSINESS CONSULTANCY INTERNATIONAL TRADING</p>
+            <p class="title" style="color: #3F497C">BUSINESS CONSULTANCY INTERNATIONAL TRADING</p>
 
             <p class="para">USBD Market Access LLC is a US-based company that is specialized in the area of International Business Consultancy, especially for Bangladesh and US business enterprises who intends to carry out business in either country. Our area of expertise includes Business Strategies, Project Management, Business Development, Customer Relationship Management (CRM) and International Trading.</p>
 
@@ -33,42 +34,42 @@
             
             
         </div>
-        <div class="picture-box">
-            <img src="./img/business_consultancy.svg" alt="image of business consultancy">
+        <div class="picture-box" data-aos='fade-left' data-aos-once="true">
+            <img src="./img/business_consultancy.svg" alt="image of business consultancy" id="bc1">
         </div>
     </div>
     <div class="container-cards">
-        <p class="title-header">SERVICES</p>
+        <p class="title-header" style="color: #3F497C">SERVICES</p>
         <div class="card-wrapper">
-            <div class="card">
+            <div class="card" data-aos='fade-up' data-aos-once="true">
                 <img src="./img/business_consultancy2.svg" alt="image for business consultancy card">
                 <div class="card-content">
-                    <p class="card-title">BUSINESS CONSULTANCY</p>
+                    <p class="card-title" style="color: #3F497C">BUSINESS CONSULTANCY</p>
                     <p class="card-para">Help businesses develop with strategic and resource planning</p>
                 </div> 
             </div>
-            <div class="card">
+            <div class="card" data-aos='fade-down' data-aos-once="true">
                 <img src="./img/project_management.svg" alt="image for project management card">
                 <div class="card-content">
-                    <p class="card-title">PROJECT MANAGEMENT</p>
+                    <p class="card-title" style="color: #3F497C">PROJECT MANAGEMENT</p>
                     <p class="card-para">Help plan project from start to finish including on ground management as well as outsourcing management</p>
                 </div>
             </div>
-            <div class="card">
+            <div class="card" data-aos='fade-up' data-aos-once="true">
                 <img src="./img/international_trading.svg" alt="image for international trading card">
                 <div class="card-content">
-                    <p class="card-title">INTERNATIONAL TRADING</p>
+                    <p class="card-title" style="color: #3F497C">INTERNATIONAL TRADING</p>
                     <p class="card-para">Facilitate import and export as well as acting as the buying agent</p>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="picture-box">
-            <img src="./img/potential.svg" alt="image for potential section">
+        <div class="picture-box" data-aos='fade-right' data-aos-once="true">
+            <img src="./img/potential.svg" alt="image for potential section" id="potential">
         </div>
         <div class="box">
-            <p class="title-header">POTENTIAL FOR US COMPANIES</p>
+            <p class="title-header" style="color: #3F497C">POTENTIAL FOR US COMPANIES</p>
 
             <p class="para">According to Asian Development Bank projection for 2019, Bangladesh will attain highest GDP growth rate of 8% in the South East Asia followed by India at 7.2%. World Bank has put Bangladesh into its ‘Middle-income Countries’ (MICs) list in 2018 due its per Capita income growth in recent years.</p>
 
@@ -79,7 +80,7 @@
     </div>
     <div class="container-reverse">
         <div class="box">
-            <p class="title-header">A ‘HOTSPOT’ FOR APPAREL SOURCING</p>
+            <p class="title-header" style="color: #3F497C">A ‘HOTSPOT’ FOR APPAREL SOURCING</p>
 
             <p class="para">Bangladesh is the 3rd largest supplier of Apparels in US according to US official data. Its competitiveness as a supplier is growing due to labor cost and improvements in productivity, infrastructure and Govt incentives for the exporters. Also developments in China’s economy, makes Bangladesh more attractive as a ‘Source’ for Apparel products.</p>
 
@@ -88,16 +89,23 @@
             <p class="para">USBD Market Access LLC is rightly positioned to establish effective and efficient link between US ‘Buyers’ and Bangladesh ‘Makers’.
             </p>
         </div>
-        <div class="picture-box">
+        <div class="picture-box" data-aos='fade-left' data-aos-once="true">
             <img src="./img/apparel_shopping.svg" alt="picture for apparel section">
         </div>
     </div>
 
     <div class="container-contact" id="contact">
-        <p class="title">CONTACT</p>
+        <p class="title" style="color: #3F497C">CONTACT</p>
         <p>info@usbdmarketaccess.com</p>
     </div>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 500,
+        duration: 750,
+    });
+  </script>
     
 </body>
 </html>
