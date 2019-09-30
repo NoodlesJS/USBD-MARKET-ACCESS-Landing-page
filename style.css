@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: roboto;
+    scroll-behavior: smooth;
 }
 
 .buttons {
@@ -67,6 +68,20 @@
 
 }
 
+header {
+    width: 100vw;
+    height: 150px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+header img {
+    width: 80px;
+}
+
 .container {
     /* border: 1px dashed black; */
     width: 100vw;
@@ -90,6 +105,21 @@
     align-items: center;
     flex-wrap: wrap-reverse;
 }
+
+.container-contact {
+    /* border: 1px solid black; */
+    width: 100vw;
+    min-height: 30vh;
+    padding: 50px 200px;
+
+    background: #FCF3F3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
 
 
 /* if you change box width and height for pictures, make sure to change it for media screen too */
@@ -205,6 +235,10 @@
     .card {
         background: white;
         box-shadow: 0 0 20px rgb(236, 229, 229);
+    }
+
+    .container-contact {
+        padding-left: 10px;
     }
 }
 
