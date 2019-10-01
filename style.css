@@ -260,7 +260,5 @@ header img {
 }
 
 @media screen and (max-width: 450px) {
-    [data-aos].animated {
-        visibility: hidden;
-      }
+    
 }
