@@ -6,57 +6,52 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="./img/logo.svg">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="style.css">
     <title>USBD MARKET ACCESS</title>
 </head>
 <body>
-    <header>
-        <img src="./img/logo.png" alt="logo of company">
-        <p style="font-size: 25px; font-weight: 900; color: #2B6539">USBD MARKET ACCESS</p>
-    </header>
-    
-    <div class="container-reverse">
+    <div class="header">
+        <img src="./img/logo.png" alt="image of company logo" width="70px">
+        <p style="font-weight: 900; font-size: 25px; color: #2B6539">USBD MARKET ACCESS</p>
+    </div>
+    <div class="container-landing">
         <div class="box">
+            <!-- <div class="logo">
+                <img src="./img/logo.png" alt="">
+                <p style="font-weight: 900">USBD MARKET ACCESS</p>
+            </div> -->
+
             <p class="title" style="color: #3F497C">BUSINESS CONSULTANCY INTERNATIONAL TRADING</p>
 
             <p class="para">USBD Market Access LLC is a US-based company that is specialized in the area of International Business Consultancy, especially for Bangladesh and US business enterprises who intends to carry out business in either country. Our area of expertise includes Business Strategies, Project Management, Business Development, Customer Relationship Management (CRM) and International Trading.</p>
 
             <p class="para">Our vast experience in Bangladesh and other International markets includes UK, Australia, Japan and UAE gives us opportunities to understand the dynamics of developed and developing markets, its trends and prospects. Thus, placed us in a unique position to assist companies intends to do business in these two countries – US and Bangladesh.</p>
-            
-            
-            <div class="button-wrapper">
-                <div class="buttons">
-                    <!-- <a href="#"><button class="button-fill">SERVICES</button></a> -->
-                    <a href="#contact"><button class="button-nofill">CONTACT</button></a>
-                </div>
-            </div>
-            
-            
-            
+
+            <a href="#contact"><button class="button-nofill">CONTACT</button></a>
         </div>
-        <div class="picture-box" data-aos='fade-left' data-aos-once="true">
-            <img src="./img/business_consultancy.svg" alt="image of business consultancy" id="bc1">
+        <div class="picture-box" data-aos='fade-left'>
+            <img src="./img/business_consultancy.svg" alt="image of business consultancy">
         </div>
     </div>
     <div class="container-cards">
         <p class="title-header" style="color: #3F497C">SERVICES</p>
         <div class="card-wrapper">
-            <div class="card" data-aos='fade-up' data-aos-once="true">
+            <div class="card" data-aos='fade-down'>
                 <img src="./img/business_consultancy2.svg" alt="image for business consultancy card">
                 <div class="card-content">
                     <p class="card-title" style="color: #3F497C">BUSINESS CONSULTANCY</p>
                     <p class="card-para">Help businesses develop with strategic and resource planning</p>
                 </div> 
             </div>
-            <div class="card" data-aos='fade-down' data-aos-once="true">
+            <div class="card" data-aos='fade-up'>
                 <img src="./img/project_management.svg" alt="image for project management card">
                 <div class="card-content">
                     <p class="card-title" style="color: #3F497C">PROJECT MANAGEMENT</p>
                     <p class="card-para">Help plan project from start to finish including on ground management as well as outsourcing management</p>
                 </div>
             </div>
-            <div class="card" data-aos='fade-up' data-aos-once="true">
+            <div class="card" data-aos='fade-down'>
                 <img src="./img/international_trading.svg" alt="image for international trading card">
                 <div class="card-content">
                     <p class="card-title" style="color: #3F497C">INTERNATIONAL TRADING</p>
@@ -66,8 +61,8 @@
         </div>
     </div>
     <div class="container">
-        <div class="picture-box" data-aos='fade-right' data-aos-once="true">
-            <img src="./img/potential.svg" alt="image for potential section" id="potential">
+        <div class="picture-box" data-aos='fade-right'>
+            <img src="./img/potential.svg" alt="image for potential section">
         </div>
         <div class="box">
             <p class="title-header" style="color: #3F497C">POTENTIAL FOR US COMPANIES</p>
@@ -90,24 +85,26 @@
             <p class="para">USBD Market Access LLC is rightly positioned to establish effective and efficient link between US ‘Buyers’ and Bangladesh ‘Makers’.
             </p>
         </div>
-        <div class="picture-box" data-aos='fade-left' data-aos-once="true">
+        <div class="picture-box" data-aos='fade-left'>
             <img src="./img/apparel_shopping.svg" alt="picture for apparel section">
         </div>
     </div>
-
-    <div class="container-contact" id="contact">
-        <p class="title" style="color: #3F497C">CONTACT</p>
-        <p>info@usbdmarketaccess.com</p>
+    <div class="contact" id="contact">
+        <div class="contact-content">
+            <p style="font-size: 40px; font-weight: 900; color: #3F497C">CONTACT</p>
+            <p style="font-weight: 900">info@usbdmarketaccess.com</p>
+        </div>
     </div>
 
+
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-        offset: 500,
-        duration: 750,
-        disable: window.innerWidth < 600
-    });
-  </script>
-    
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 750,
+            disable: window.innerWidth < 600
+        });
+    </script>
+
 </body>
 </html>

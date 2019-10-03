@@ -6,30 +6,11 @@
     scroll-behavior: smooth;
 }
 
-.buttons {
-    /* border: 1px dashed red; */
-    margin-top: 10px;
-    width: 430px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.button-fill {
+a {
     width: 200px;
-    padding: 15px 0;
-    font-size: 20px;
-    color: white;
-    background: #3CC1AB;
-    border-radius: 50px;
-    border: none;
-    transition: 0.2s ease; 
-}
-.button-fill:hover {
-    background: rgb(48, 170, 150);
-    cursor: pointer;
 }
 .button-nofill {
-    width: 200px;
+    width: 100%;
     padding: 15px 0;
     font-size: 20px;
     color: #3CC1AB;
@@ -44,42 +25,54 @@
     cursor: pointer;
 }
 
+
 .title {
-    font-size: 45px;
+    font-size: 40px;
     font-weight: 900;
     padding: 20px 0;
 }
 .title-header{
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 900;
     padding: 20px 0;
 }
 .para {
-    font-size: 20px;
+    font-size: 15px;
     padding: 20px 0;
 }
 
 .card-title {
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 900;
     margin-bottom: 10px;
 }
-.card-para {
 
+.card-para {
+    padding: 0 30px;
 }
 
-header {
+.logo img {
+    width: 50px;
+}
+
+
+.header {
     width: 100vw;
-    height: 150px;
-    margin-top: 20px;
+    min-height: 10vh;
     text-align: center;
+    margin-top: 20px;
+}
+
+.container-landing {
+    /* border: 1px dashed green; */
+    width: 100vw;
+    min-height: 90vh;
+    padding: 50px 0;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
-}
-header img {
-    width: 80px;
+    flex-wrap: wrap-reverse;
 }
 
 .container {
@@ -95,7 +88,7 @@ header img {
 }
 
 .container-reverse {
-    /* border: 1px dashed red; */
+    /* border: 1px dashed green; */
     width: 100vw;
     min-height: 100vh;
     padding: 50px 0;
@@ -105,44 +98,6 @@ header img {
     align-items: center;
     flex-wrap: wrap-reverse;
 }
-
-.container-contact {
-    /* border: 1px solid black; */
-    width: 100vw;
-    min-height: 30vh;
-    padding: 50px 200px;
-
-    background: #FCF3F3;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-
-
-/* if you change box width and height for pictures, make sure to change it for media screen too */
-.box {
-    /* border: 1px solid black; */
-    width: 800px;
-    min-height: 800px;
-    margin: 10px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.picture-box {
-    /* border: 1px dashed green; */
-    width: 800px;
-    min-height: 800px;
-    margin: 10px;
-}
-
-
 
 .container-cards {
     /* border: 1px dashed red; */
@@ -169,10 +124,10 @@ header img {
 .card {
     /* border: 1px solid black; */
     width: 400px;
-    min-height: 650px;
+    min-height: 500px;
     margin: 10px;
     background: transparent;
-    border-radius: 10px;
+    border-radius: 15px;
 
     display: flex;
     justify-content: center;
@@ -196,69 +151,66 @@ header img {
     text-align: center;
 }
 
+.contact {
+    /* border: 1px solid black; */
+    width: 100vw;
+    min-height: 25vh;
+    background: #FCF3F3
+}
 
-@media screen and (max-width: 1640px) {
+.contact-content {
+    width: 100%;
+    min-height: 25vh;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.box {
+    /* border: 1px solid black; */
+    width: 600px;
+    min-height: 600px;
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.picture-box {
+    /* border: 1px dashed green; */
+    width: 600px;
+    min-height: 600px;
+    margin: 10px;
+}
+
+
+
+
+@media screen and (max-width: 1240px) {
     .box {
         align-items: center;
         min-height: auto;
     }
 
-    .buttons {
-        width: 90vw;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    button {
-        margin-bottom: 10px;
-    }
-
-    .button-fill {
-        width: 50vw;
-    }
-    .button-nofill {
-        width: 50vw;
+    a {
+        width: 100%;
     }
 }
-
-@media screen and (max-width: 1120px) {
-    .card-wrapper {
-        
-    }
-}
-
-@media screen and (max-width: 820px) {
+@media screen and (max-width: 843px) {
     .picture-box {
         min-height: auto;
-    }   
-
-    .buttons {
-        width: 90vw;
-        align-items: flex-start;
-        flex-direction: column;
-    }
-
-    button {
-        margin-bottom: 10px;
-    }
-
-    .button-fill {
-        width: 90vw;
-    }
-    .button-nofill {
-        width: 90vw;
-    }
+    }  
 
     .card {
         background: white;
         box-shadow: 0 0 20px rgb(236, 229, 229);
     }
-
-    .container-contact {
-        padding-left: 10px;
+    .card:hover {
+        box-shadow: 0 0 20px rgb(236, 229, 229);
     }
-}
-
-@media screen and (max-width: 450px) {
-    
 }
