@@ -2,103 +2,151 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="./img/logo.svg">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <title>USBD Market Access</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>USBD MARKET ACCESS</title>
 </head>
-<body>
-    <div class="header">
-        <img src="./img/logo.png" alt="image of company logo" width="70px">
-        <p style="font-weight: 900; font-size: 25px; color: #2B6539">USBD MARKET ACCESS LLC</p>
-    </div>
-    <div class="container-landing">
-        <div class="box">
-            <p class="title" style="color: #3F497C" data-aos='fade-left'>BUSINESS CONSULTANCY, INTERNATIONAL TRADING</p>
-
-            <p class="para">USBD Market Access LLC is a US-based company that is specialized in the area of International Business Consultancy, especially for Bangladesh and US business enterprises who intends to carry out business in either country. Our area of expertise includes Business Strategies, Project Management, Business Development, Customer Relationship Management (CRM) and International Trading.</p>
-
-            <p class="para">Our vast experience in Bangladesh and other International markets includes UK, Australia, Japan and UAE gives us opportunities to understand the dynamics of developed and developing markets, its trends and prospects. Thus, placed us in a unique position to assist companies intends to do business in these two countries – US and Bangladesh.</p>
-
-            <a href="#contact"><button class="button-nofill">CONTACT</button></a>
-        </div>
-        <div class="picture-box" data-aos='fade-right'>
-            <img src="./img/business_consultancy.svg" alt="image of business consultancy">
-        </div>
-    </div>
-    <div class="container-cards">
-        <p class="title-header" style="color: #3F497C">SERVICES</p>
-        <div class="card-wrapper">
-            <div class="card" data-aos='fade-right'>
-                <img src="./img/business_consultancy2.svg" alt="image for business consultancy card">
-                <div class="card-content">
-                    <p class="card-title" style="color: #3F497C">BUSINESS CONSULTANCY</p>
-                    <p class="card-para">Help Clients with Strategic Planning and Business Development</p>
-                </div> 
+<body >
+        <header>
+            <div class="header">
+                <div class="navbar">
+                    <div>
+                        <img class="logo" src="assets/logo.png" alt="">
+                    </div>
+                    <div class="nav-btn-container">
+                        <p class="menu">menu</p>
+                        <button class="nav-toggle" aria-label="toggle navigation">
+                            <img class="hamburger" src="assets/Hamburger_icon.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#home" class="link">home</a></li>
+                        <li><a href="#about" class="link">about</a></li>
+                        <li><a href="#services" class="link">services</a></li>
+                        <li><a href="#work-with-us" class="link">work with us</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="card" data-aos='fade-left'>
-                <img src="./img/project_management.svg" alt="image for project management card">
-                <div class="card-content">
-                    <p class="card-title" style="color: #3F497C">PROJECT MANAGEMENT</p>
-                    <p class="card-para">Help Clients with Project Management including Project Planning and  on the ground execution. Help Manage Outsourcing projects</p>
+        </header>
+    <div class="body">
+        <section  class="home-section" id="home" >
+            <div class ="home">
+                <div class="home-container">
+                    <div class="home-text-container" data-aos="fade-down" >
+                        <p class="title white-title">expand your business outside u.s. border</p>
+                        <p class="home-desc">We are international business consulting experts helping companies conduct business in the U.S. and Bangladesh.</p>
+                        <button class="home-btn"> <a href="#work-with-us">get in touch</a></button>
+                    </div>
+                    <div class="home-img-container" data-aos="fade-down" >
+                        <img class="home-img" src="assets/hero-image.svg" alt="">
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+
+        <section  class="about" id="about" data-aos="fade-down" >
+            <div class="about-container" style="max-width: 1200px;">
+                <p class="title" >about</p>
+                <p>USBD Market Access is a U.S.-based company specializing in international business consultancy. We work together with businesses in Bangladesh and the United States that are looking to expand to either country.</p>
+                <p class="underline">Our areas of expertise include Business Strategies, Project Management, Business Development, Customer Relationship Management (CRM) and International Trading.</p>  
+            </div>
+        </section>
+
+        <section class="services" id="services" data-aos="fade-up">
+            <div style="max-width: 1200px;">
+                <p class="title">services</p>
+                <div class="services-card-container">
+                    <div class="card">
+                        <img class="services-logo" src="assets/lightbulb-icon.svg" alt="">
+                        <p class="subtitle">business</br>consulting</p>
+                        <p class="service-desc">Assisting clients with strategic planning, business development, and customer relationship management is our specialty.</p>
+                    </div>
+                    <div class="card">
+                        <img class="services-logo" src="assets/target-icon.svg" alt="">
+                        <p class="subtitle">project</br>management</p>
+                        <p class="service-desc">We provide expert guidance with project planning, on-the-ground strategy execution, and managing outsourced projects.
+                        </p>
+                    </div>
+                    <div class="card">
+                        <img class="services-logo" src="assets/globe-icon.svg" alt="">
+                        <p class="subtitle">international</br>trading</p>
+                        <p class="service-desc">USBD Market Access facilitates importing and exporting, as well as acting as the buying agent.</p>
+                    </div>
                 </div>
             </div>
-            <div class="card" data-aos='fade-right'>
-                <img src="./img/international_trading.svg" alt="image for international trading card">
-                <div class="card-content">
-                    <p class="card-title" style="color: #3F497C">INTERNATIONAL TRADING</p>
-                    <p class="card-para">Facilitate import and export as well as acting as the buying agent</p>
+                
+        </section>
+
+        <section class="potential">
+            <div style="max-width: 1200px;">
+                <p class="title">potential for american companies</p>
+                <div  class="pseudo-card-container">
+                    <div class="pseudo-card">
+                        <img  class="card-img" src="assets/1-business-deal.svg" alt="" >
+                        <p class="flip-card" data-aos="fade-up" >According to The Asian Development Bank projection for 2019, Bangladesh will attain the highest GDP growth in Southeast Asia with a rate of 8%, followed by India at 7.2%. Additionally, the World Bank has included Bangladesh in its ‘Middle-income Countries’ (MICs) list in 2018 due to its per capita income growth in recent years.
+                        </p>
+                    </div>
+                    <div class="pseudo-card">
+                        <img  class="card-img" src="assets/2-business-woman.svg" alt="" >
+                        <p data-aos="fade-up" >Consumer spending in Bangladesh has tripled in the last ten years, resulting in potential opportunities for U.S. companies to explore the market for products and services. Major oil and gas companies and energy giants such as GE have also been actively pursuing business interests in Bangladesh. </p>
+                    </div>
+                    <div class="pseudo-card">
+                        <img  class="card-img" src="assets/3-backpack.svg" alt="" >
+                        <p class="flip-card" data-aos="fade-up" >Due to inexpensive labor costs and increasing consumer spending, Bangladesh offers a very positive prospect for U.S. investors. With our vast knowledge of the country, we will be able to provide top-notch support for your business to thrive. </p>
+                    </div>
                 </div>
             </div>
-        </div>
+                
+        </section>
+
+        <section class="hotspot">
+            <div style="max-width: 1200px;">
+                <p class="title">a 'hotspot' for apparel sourcing</p>
+                <div class="pseudo-card-container">
+                    <div class="pseudo-card">
+                        <img class="card-img" src="assets/4-entrepreneur.svg" alt="" >
+                        <p data-aos="fade-up">Bangladesh is the third largest supplier of apparel in the U.S. and its competitive edge as a supplier is growing due to low labor costs and improvement in productivity, infrastructure, and government incentives for exporters. With development in China’s economy as well, Bangladesh has become a more attractive source for apparel products.</p>
+                    </div>
+                    <div class="pseudo-card">
+                        <img class="card-img" src="assets/5-businessman.svg" alt="" >
+                        <p class="flip-card" data-aos="fade-up" >According to McKinsey Institute, Bangladesh will soon become one of the hotspots for apparel product sourcing; Of the 28 major apparel buyers in the U.S. and Europe, 89% stated that they consider Bangladesh among the top three sourcing destinations.
+                        </p>
+                    </div>
+                    <p class="hotspot-conclusion" data-aos="fade-up" >USBD Market Access is appropriately positioned to establish an effective and efficient link between buyers in the U.S. and the “makers” in Bangladesh.</p>
+                </div>
+            </div>
+                
+        </section>
+
+        <section class="work-with-us" id="work-with-us" data-aos="fade-up">
+                <p class="title">work with us</p>
+                <p style="margin: 0;">Interested in our services? Let us know how we can assist your business!</p>
+                <p style="margin: 4px;">Drop us a message below or email us directly at </br><strong>sharif@usbdmarketaccess.com.</strong></p>
+                <form name="contact" method="POST" data-netlify="true" data-aos="fade-up" class="contact-form">
+                    <input type="text" name="name" placeholder="Name" required></br>
+                    <input type="email" name="email" placeholder="Email" required></br>
+                    <textarea required name="message" id="" cols="30" rows="10" placeholder="Message"></textarea></br>
+                    <button class="wwu-btn" type="submit">Submit</button>
+                </form>
+        </section>
     </div>
-    <div class="container">
-        <div class="picture-box" data-aos='fade-left'>
-            <img src="./img/potential.svg" alt="image for potential section">
-        </div>
-        <div class="box">
-            <p class="title-header" style="color: #3F497C" data-aos='fade-right'>POTENTIALS FOR AMERICAN COMPANIES</p>
-
-            <p class="para">According to Asian Development Bank projection for 2019, Bangladesh will attain highest GDP growth rate of 8% in the South East Asia followed by India at 7.2%. World Bank has put Bangladesh into its ‘Middle-income Countries’ (MICs) list in 2018 due its per Capita income growth in recent years.</p>
-
-            <p class="para">Bangladesh Consumer Spending has tripled in last 10 years resulting in potentials for US companies to explore the market for their products and services. Major Oil and Gas companies are already there and Energy giants like GE is also actively pursuing business interests in Bangladesh.</p>
-
-            <p class="para">Due to its cheap labor costs and increasing Consumer spending, Bangladesh offers a very good prospect for US investors and with our vast knowledge of the country, we will be able to provide necessary supports.</p>
-        </div>
-    </div>
-    <div class="container-reverse">
-        <div class="box">
-            <p class="title-header" style="color: #3F497C" data-aos='fade-left'>A ‘HOTSPOT’ FOR APPAREL SOURCING</p>
-
-            <p class="para">Bangladesh is the 3rd largest supplier of Apparels in US according to US official data. Its competitiveness as a supplier is growing due to labor cost and improvements in productivity, infrastructure and Govt incentives for the exporters. Also developments in China’s economy, makes Bangladesh more attractive as a ‘Source’ for Apparel products.</p>
-
-            <p class="para">In a recent survey, Mckinsey research found that Bangladesh will be one of the ‘HOTSPOTS’ for Apparel products sourcing. 89% of the 28 major Apparel buyers in US and Europe said that they see Bangladesh among the top 3 sourcing destinations.</p>
-
-            <p class="para">USBD Market Access LLC is rightly positioned to establish effective and efficient link between US ‘Buyers’ and Bangladesh ‘Makers’.
-            </p>
-        </div>
-        <div class="picture-box" data-aos='fade-right'>
-            <img src="./img/apparel_shopping.svg" alt="picture for apparel section">
-        </div>
-    </div>
-    <div class="contact" id="contact">
-        <div class="contact-content">
-            <p style="font-size: 40px; font-weight: 900; color: #3F497C">CONTACT</p>
-            <p style="font-weight: 900">sharif@usbdmarketaccess.com</p>
-        </div>
-    </div>
-
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init({
             offset: 150,
             duration: 900
         });
     </script>
-
 </body>
 </html>
